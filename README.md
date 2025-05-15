@@ -183,69 +183,47 @@
         "
       >
         <!-- Bài 1 -->
-        <div
-          style="
-            max-width: 360px;
-            max-height: 640px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            color: #eee;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            class="fb-post"
-            data-href="https://www.facebook.com/OtisSeller/posts/672996332031027"
-            data-width="360"
-            data-show-text="true"
-          ></div>
-          <p style="font-size: 16px; margin-top: 12px">
-            Chờ đợi hoài một điều diệu kì...🌱
-          </p>
+        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
+          <iframe
+            src="https://www.facebook.com/reel/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F672996332031027%2F&show_text=true&width=267&t=0"
+            width="360"
+            height="640"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen="true"
+          ></iframe>
         </div>
 
         <!-- Bài 2 -->
-        <div
-          style="
-            max-width: 360px;
-            max-height: 640px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            color: #eee;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            class="fb-post"
-            data-href="https://www.facebook.com/OtisSeller/videos/693901322996665"
-            data-width="360"
-            data-show-text="true"
-          ></div>
-          <p style="font-size: 16px; margin-top: 12px">
-            OTISSTORE - Uy Tín Tạo Nên Thương Hiệu!
-          </p>
+        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FOtisGamerVN%2Fvideos%2F2050806685329017%2F&show_text=false&width=560&t=0"
+            width="360"
+            height="210"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen="true"
+          ></iframe>
         </div>
 
         <!-- Bài 3 -->
-        <div
-          style="
-            max-width: 360px;
-            max-height: 640;
-            background: #1a1a1a;
-            border-radius: 8px;
-            color: #eee;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            class="fb-post"
-            data-href="https://www.facebook.com/OtisSeller/posts/122138746688611769"
-            data-width="360"
-            data-show-text="true"
-          ></div>
-          <p style="font-size: 16px; margin-top: 12px">
-            OTISShop | Chất Lượng - Uy Tín - Tin Cậy.
-          </p>
+        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOtisSeller%2Fposts%2F122138746688611769&show_text=true&width=500"
+            width="360"
+            height="480"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </div>
     </section>
