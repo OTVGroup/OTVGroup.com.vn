@@ -185,7 +185,7 @@
         <!-- Bài 1 -->
         <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
           <iframe
-            src="https://www.facebook.com/reel/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F672996332031027%2F&show_text=true&width=267&t=0"
+            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F672996332031027%2F&show_text=false&width=267&t=0"
             width="360"
             height="640"
             style="border: none; overflow: hidden"
@@ -198,7 +198,7 @@
         </div>
 
         <!-- Bài 2 -->
-        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
+        <!-- <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
           <iframe
             src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FOtisGamerVN%2Fvideos%2F2050806685329017%2F&show_text=false&width=560&t=0"
             width="360"
@@ -210,7 +210,7 @@
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             allowfullscreen="true"
           ></iframe>
-        </div>
+        </div> -->
 
         <!-- Bài 3 -->
         <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
