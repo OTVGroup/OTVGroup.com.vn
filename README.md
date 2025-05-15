@@ -108,7 +108,7 @@
     <section id="projects">
       <h2>Kết nối với chúng tôi</h2>
 
-      <!-- Dòng 1: Facebook -->
+      <!-- Dòng 1: Facebook + Youtube-->
       <div
         style="
           display: flex;
@@ -118,6 +118,7 @@
           padding-top: 30px;
         "
       >
+        <!-- Facebook -->
         <div style="width: 125px; text-align: center">
           <a href="https://www.facebook.com/otisvo" target="_blank">
             <img
@@ -160,6 +161,53 @@
                 src="https://img.icons8.com/color/20/facebook-new.png"
                 style="vertical-align: middle; margin-right: 5px"
               />OTIS Store
+            </p>
+          </a>
+        </div>
+
+        <!-- Youtube -->
+        <div style="width: 125px; text-align: center">
+          <a href="https://www.youtube.com/@otvchannel" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
+              width="120"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Channel
+            </p>
+          </a>
+        </div>
+        <div style="width: 125px; text-align: center">
+          <a href="https://www.youtube.com/@otvstory" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/09/44/f6/0944f6cacd07b3a164a82d62f02d2709.jpg"
+              width="120"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Story
+            </p>
+          </a>
+        </div>
+        <div style="width: 125px; text-align: center">
+          <a href="https://www.youtube.com/@otvgaming" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
+              width="120"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Gaming
             </p>
           </a>
         </div>
@@ -232,63 +280,6 @@
                 src="https://img.icons8.com/color/20/zalo.png"
                 style="vertical-align: middle; margin-right: 5px"
               />Otis Võ
-            </p>
-          </a>
-        </div>
-      </div>
-
-      <!-- Dòng 3: Youtube -->
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          gap: 30px;
-          flex-wrap: wrap;
-          padding-top: 30px;
-        "
-      >
-        <div style="width: 125px; text-align: center">
-          <a href="https://www.youtube.com/@otvchannel" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
-              width="120"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTV Channel
-            </p>
-          </a>
-        </div>
-        <div style="width: 125px; text-align: center">
-          <a href="https://www.youtube.com/@otvstory" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/09/44/f6/0944f6cacd07b3a164a82d62f02d2709.jpg"
-              width="120"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTV Story
-            </p>
-          </a>
-        </div>
-        <div style="width: 125px; text-align: center">
-          <a href="https://www.youtube.com/@otvgaming" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
-              width="120"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTV Gaming
             </p>
           </a>
         </div>
