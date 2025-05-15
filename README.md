@@ -94,7 +94,7 @@
         style="
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 15px;
           justify-content: center;
         "
       >
@@ -116,7 +116,7 @@
           padding-top: 30px;
         "
       >
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.facebook.com/OtisVo586" target="_blank">
             <img
               src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
@@ -131,7 +131,7 @@
             </p>
           </a>
         </div>
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.facebook.com/OtisGamerVN" target="_blank">
             <img
               src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
@@ -146,7 +146,7 @@
             </p>
           </a>
         </div>
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.facebook.com/OtisSeller" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
@@ -176,7 +176,7 @@
         style="
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 15px;
           justify-content: center;
           max-width: 1200px;
           margin: auto;
@@ -234,7 +234,6 @@
             background: #1a1a1a;
             border-radius: 8px;
             color: #eee;
-            padding: 10px;
             box-sizing: border-box;
           "
         >
@@ -263,7 +262,7 @@
           padding-top: 30px;
         "
       >
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.instagram.com/otisshopvn" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
@@ -278,7 +277,7 @@
             </p>
           </a>
         </div>
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.tiktok.com/@otisshop" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
@@ -293,7 +292,7 @@
             </p>
           </a>
         </div>
-        <div style="width: 110px; text-align: center">
+        <div style="width: 100px; text-align: center">
           <a href="https://www.threads.net/@otisshopvn" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
@@ -313,7 +312,7 @@
         style="
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 15px;
           justify-content: center;
           max-width: 1200px;
           margin: auto;
