@@ -80,15 +80,70 @@
         "
       />
       <h1>Website chính thức của OTVGroup</h1>
-      <form>
+      <!-- <form>
         <input type="text" placeholder="Tìm kiếm nhanh" width="65vh" />
         <button type="submit">Tìm kiếm</button>
-      </form>
+      </form> -->
     </section>
 
     <!-- Ngăn 2: Youtube -->
     <section id="youtube-videos">
       <h2>Youtube Videos</h2>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          flex-wrap: wrap;
+          padding-top: 30px;
+        "
+      >
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.youtube.com/@otvchannelvn" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Channel
+            </p>
+          </a>
+        </div>
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.youtube.com/@otvstoryvn" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/09/44/f6/0944f6cacd07b3a164a82d62f02d2709.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Story
+            </p>
+          </a>
+        </div>
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.youtube.com/@otisstorevn" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTISSTORE
+            </p>
+          </a>
+        </div>
+      </div>
       <div
         id="videos-container"
         style="
@@ -106,7 +161,7 @@
 
     <!-- Ngăn 3: Tin Mới -->
     <section id="facebook-reels">
-      <h2>Facebook Reals</h2>
+      <h2>Facebook Videos</h2>
       <div
         style="
           display: flex;
@@ -339,7 +394,7 @@
         background: #121212;
         color: #e4e4e4;
         font-family: sans-serif;
-        padding: 30px 0;
+        padding: 15px 0;
       "
     >
       <div
