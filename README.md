@@ -111,7 +111,7 @@
         style="
           display: flex;
           justify-content: center;
-          gap: 30px;
+          gap: 15px;
           flex-wrap: wrap;
           padding-top: 30px;
         "
@@ -120,7 +120,7 @@
           <a href="https://www.facebook.com/OtisVo586" target="_blank">
             <img
               src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
@@ -135,7 +135,7 @@
           <a href="https://www.facebook.com/OtisGamerVN" target="_blank">
             <img
               src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
@@ -150,7 +150,7 @@
           <a href="https://www.facebook.com/OtisSeller" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
@@ -163,7 +163,6 @@
         </div>
       </div>
       <!-- Nhúng reel hoặc bài viết Facebook -->
-
       <div id="fb-root"></div>
       <script
         async
@@ -172,67 +171,82 @@
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
       ></script>
 
+      <!-- Container chứa các post -->
       <div
         style="
           display: flex;
-          gap: 10px;
-          justify-content: center;
           flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          max-width: 1200px;
+          margin: auto;
         "
       >
-        <div id="fb-root"></div>
-        <script
-          async
-          defer
-          crossorigin="anonymous"
-          src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
-        ></script>
-
+        <!-- Bài 1 -->
         <div
-          id="fb-posts"
           style="
-            display: flex;
-            flex-wrap: wrap; /* cho phép xuống dòng khi cần */
-            gap: 20px; /* khoảng cách giữa các item */
-            justify-content: center; /* căn giữa toàn bộ hàng */
-            max-width: 1200px; /* max width tổng container */
-            margin: auto; /* căn giữa container trong trang */
+            width: 360px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            color: #eee;
+            padding: 10px;
+            box-sizing: border-box;
           "
-        ></div>
+        >
+          <div
+            class="fb-post"
+            data-href="https://www.facebook.com/OtisSeller/posts/672996332031027"
+            data-width="360"
+            data-show-text="true"
+          ></div>
+          <p style="font-size: 16px; margin-top: 12px">
+            Chờ đợi hoài một điều diệu kì...🌱
+          </p>
+        </div>
 
-        <script>
-          const fbPosts = [
-            {
-              url: "https://www.facebook.com/share/r/14JatVjLddu/",
-              description: "Chờ đợi hoài một điều diệu kì...🌱",
-            },
-            {
-              url: "https://www.facebook.com/share/v/197xenGDkk/",
-              description: "Liên Quân Mobile - Tập Chơi Raz #1",
-            },
-            {
-              url: "https://www.facebook.com/share/193LArs12U/",
-              description: "OTISShop | Chất Lượng - Uy Tín - Tin Cậy.",
-            },
-          ];
+        <!-- Bài 2 -->
+        <div
+          style="
+            width: 360px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            color: #eee;
+            padding: 10px;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            class="fb-post"
+            data-href="https://www.facebook.com/OtisSeller/videos/2050806685329017"
+            data-width="360"
+            data-show-text="true"
+          ></div>
+          <p style="font-size: 16px; margin-top: 12px">
+            Liên Quân Mobile - Tập Chơi Raz #1
+          </p>
+        </div>
 
-          const postsContainer = document.getElementById("fb-posts");
-          fbPosts.forEach((post) => {
-            const wrapper = document.createElement("div");
-            wrapper.style.width = "360px";
-            wrapper.style.background = "#1a1a1a";
-            wrapper.style.borderRadius = "8px";
-            wrapper.style.color = "#eee";
-            wrapper.innerHTML = `
-              <div class="fb-post" data-href="${post.url}" data-width="360" data-show-text="true"></div>
-              <p style="font-size: 16px; margin-top: 12px;">${post.description}</p>`;
-            postsContainer.appendChild(wrapper);
-          });
-
-          if (typeof FB !== "undefined") {
-            FB.XFBML.parse();
-          }
-        </script>
+        <!-- Bài 3 -->
+        <div
+          style="
+            width: 360px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            color: #eee;
+            padding: 10px;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            class="fb-post"
+            data-href="https://www.facebook.com/OtisSeller/posts/122138746688611769"
+            data-width="360"
+            data-show-text="true"
+          ></div>
+          <p style="font-size: 16px; margin-top: 12px">
+            OTISShop | Chất Lượng - Uy Tín - Tin Cậy.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -243,7 +257,7 @@
         style="
           display: flex;
           justify-content: center;
-          gap: 30px;
+          gap: 15px;
           flex-wrap: wrap;
           padding-top: 30px;
         "
@@ -252,14 +266,14 @@
           <a href="https://www.instagram.com/otisshopvn" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
               <img
                 src="https://img.icons8.com/color/20/instagram-new.png"
                 style="vertical-align: middle; margin-right: 5px"
-              />OTIS Shop
+              />OTISShop
             </p>
           </a>
         </div>
@@ -267,14 +281,14 @@
           <a href="https://www.tiktok.com/@otisshop" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
               <img
                 src="https://img.icons8.com/color/20/tiktok--v1.png"
                 style="vertical-align: middle; margin-right: 5px"
-              />OTIS Shop
+              />OTISShop
             </p>
           </a>
         </div>
@@ -282,14 +296,14 @@
           <a href="https://www.threads.net/@otisshopvn" target="_blank">
             <img
               src="https://i.pinimg.com/736x/ea/24/e1/ea24e1a0ed40857020ab39336b9fc78c.jpg"
-              width="85"
+              width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
               <img
                 src="https://img.icons8.com/ios-filled/20/000000/threads.png"
                 style="vertical-align: middle; margin-right: 5px"
-              />OTIS Shop
+              />OTISShop
             </p>
           </a>
         </div>
@@ -329,7 +343,7 @@
         </div>
 
         <!-- Threads Post -->
-        <div style="width: 360px; flex-shrink: 0">
+        <!-- <div style="width: 360px; flex-shrink: 0">
           <iframe
             src="https://www.threads.net/@otisshopvn/post/DBfkPY1PZlu"
             width="360"
@@ -337,7 +351,7 @@
             scrolling="no"
             allowfullscreen
           ></iframe>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -429,7 +443,7 @@
                   text-decoration: none;
                 "
               >
-                Agribank: 6607 205 230 700
+                Agribank: 6607205230700
               </a>
             </li>
           </ul>
