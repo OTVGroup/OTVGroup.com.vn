@@ -185,11 +185,11 @@
         <!-- Bài 1 -->
         <div
           style="
-            width: 360px;
+            max-width: 360px;
+            max-height: 640px;
             background: #1a1a1a;
             border-radius: 8px;
             color: #eee;
-            padding: 10px;
             box-sizing: border-box;
           "
         >
@@ -207,29 +207,30 @@
         <!-- Bài 2 -->
         <div
           style="
-            width: 360px;
+            max-width: 360px;
+            max-height: 640px;
             background: #1a1a1a;
             border-radius: 8px;
             color: #eee;
-            padding: 10px;
             box-sizing: border-box;
           "
         >
           <div
             class="fb-post"
-            data-href="https://www.facebook.com/OtisSeller/videos/2050806685329017"
+            data-href="https://www.facebook.com/OtisSeller/videos/693901322996665"
             data-width="360"
             data-show-text="true"
           ></div>
           <p style="font-size: 16px; margin-top: 12px">
-            Liên Quân Mobile - Tập Chơi Raz #1
+            OTISSTORE - Uy Tín Tạo Nên Thương Hiệu!
           </p>
         </div>
 
         <!-- Bài 3 -->
         <div
           style="
-            width: 360px;
+            max-width: 360px;
+            max-height: 640;
             background: #1a1a1a;
             border-radius: 8px;
             color: #eee;
