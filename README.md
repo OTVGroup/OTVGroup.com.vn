@@ -1,8 +1,11 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website chính thức của OTVGroup." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="Hân Hạnh Đồng Hành Cùng Bạn!." />
     <meta name="author" content="OTVGroup" />
     <meta
       name="image"
@@ -25,44 +28,46 @@
         background-color: #000000; /* Màu nền fallback khi ảnh không load */
         color: #000000; /* Màu chữ mặc định */
         user-select: none; /* Ngăn người dùng chọn văn bản (trải nghiệm cao cấp) */
-        width: 100%;
+        margin: 0 auto;
+        width: 100vw;
+        overflow-x: hidden; /* Ẩn tràn ngang */
+        box-sizing: border-box;
+        touch-action: manipulation; /* Ngăn gesture zoom/double-tap */
       }
 
       /* Cấu hình chung cho từng ngăn (section) */
       section {
-        padding: 30px 20px; /* Khoảng cách bên trong ngăn, giúp thoáng đẹp */
         text-align: center; /* Căn giữa nội dung trong ngăn */
-        width: 100%; /* Bắt buộc để ngăn chiếm toàn bộ chiều ngang */
+        width: 380px; /* Bắt buộc để ngăn chiếm toàn bộ chiều ngang */
         box-sizing: border-box; /* Đảm bảo padding không làm vỡ bố cục */
       }
 
       /* Ngăn 1: Hero */
       #hero {
-        background: url("https://via.placeholder.com/1920x800") center/cover
-          no-repeat;
+        background-color: #000000;
         color: white; /* Nội dung màu trắng nổi bật trên ảnh nền */
       }
 
-      /* Ngăn 2: Youtube */
-      #youtube-videos {
+      /* Ngăn 2: Thông Tin */
+      #event-streams {
+        background: #363636; /* Màu xám chủ đạo */
+      }
+
+      /* Ngăn 3: Youtube */
+      #information {
         background: white; /* Màu trắng giúp nội dung nhẹ nhàng */
       }
 
-      /* Ngăn 3: Tin Mới */
+      /* Ngăn 4: Tin Mới */
       #facebook-reels {
         background: #e0f7fa; /* Xanh nhạt, thân thiện */
       }
 
-      /* Ngăn 4: Thông Tin */
-      #more-channels {
-        background: #e1e1e1; /* Màu xám chủ đạo */
-      }
-
       /* Ngăn 5: Footer */
-      footer {
-        background: #333; /* Màu đen đậm giúp phân biệt rõ footer */
-        color: white;
-        width: 100%;
+      #footer {
+        background: #121212;
+        color: #e4e4e4;
+        font-family: sans-serif;
       }
     </style>
   </head>
@@ -79,96 +84,92 @@
           box-shadow: 0 0 50px rgba(255, 255, 255, 0.519);
         "
       />
-      <h1>Website chính thức của OTVGroup</h1>
-      <!-- <form>
-        <input type="text" placeholder="Tìm kiếm nhanh" width="65vh" />
-        <button type="submit">Tìm kiếm</button>
-      </form> -->
+      <h1>
+        OTVGroup
+        <p style="text-align: center; font-size: 16px; color: #c9c9c9">
+          Hết Mình Với Đam Mê!
+        </p>
+      </h1>
     </section>
 
-    <!-- Ngăn 2: Youtube -->
-    <section id="youtube-videos">
-      <h2>Youtube Videos</h2>
+    <!-- Ngăn 2: Event -->
+    <section id="event-streams" style="color: white">
+      <h2 style="text-align: center">🎬 Event Feed</h2>
+      <p
+        style="
+          text-align: center;
+          font-size: 14px;
+          color: #aaa;
+          margin-bottom: 10px;
+        "
+      >
+        Swipe to explore our latest shows.
+      </p>
+
       <div
         style="
           display: flex;
-          justify-content: center;
-          gap: 15px;
-          flex-wrap: wrap;
-          padding-top: 30px;
+          overflow-x: auto;
+          gap: 0;
+          margin: 0 10px;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
         "
       >
-        <div style="width: 100px; text-align: center">
-          <a href="https://www.youtube.com/@otvchannelvn" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
-              width="80"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTV Channel
-            </p>
-          </a>
-        </div>
-        <div style="width: 100px; text-align: center">
-          <a href="https://www.youtube.com/@otvstoryvn" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/09/44/f6/0944f6cacd07b3a164a82d62f02d2709.jpg"
-              width="80"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTV Story
-            </p>
-          </a>
-        </div>
-        <div style="width: 100px; text-align: center">
-          <a href="https://www.youtube.com/@otisstorevn" target="_blank">
-            <img
-              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
-              width="80"
-              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
-            />
-            <p>
-              <img
-                src="https://img.icons8.com/color/20/youtube-play.png"
-                style="vertical-align: middle; margin-right: 5px"
-              />OTISSTORE
-            </p>
-          </a>
-        </div>
-      </div>
-      <div
-        id="videos-container"
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 15px;
-          justify-content: center;
-        "
-      >
-        <div id="videosOTVChannel" style="width: 360px"></div>
-        <div id="videosOTVStory" style="width: 360px"></div>
-        <div id="videosOTVGaming" style="width: 360px"></div>
+        <!-- OTVChannel -->
+        <div
+          id="videosOTVChannel"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+        <!-- OTVStory -->
+        <div
+          id="videosOTVStory"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+
+        <!-- OTVGaming -->
+        <div
+          id="videosOTVGaming"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
       </div>
     </section>
 
-    <!-- Ngăn 3: Tin Mới -->
-    <section id="facebook-reels">
-      <h2>Facebook Videos</h2>
+    <!-- Ngăn 3: OTVGroup -->
+    <section id="information">
+      <img
+        src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/498688443_122161872326552182_1695768090882699136_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0G9mzZT3EaoQ7kNvwEnm-8A&_nc_oc=AdkqPWjqNCpr37r6IeT69RWPvMdHjb3GUktSfTiK3k5RneYwB4RIDNJdhldQKvo8QtE&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=mBODppp4OW_CB2Tnu4-qgA&oh=00_AfKS1FQmoPIwYS3PAJC7e8_80Eh8RQczoayWGVD3mXhseQ&oe=682F55AF"
+        alt="Poster-OTVGroup"
+        style="width: 100%; height: auto"
+      />
       <div
         style="
           display: flex;
           justify-content: center;
           gap: 15px;
           flex-wrap: wrap;
-          padding-top: 30px;
+          padding: 20px 15px;
         "
       >
         <div style="width: 100px; text-align: center">
@@ -187,20 +188,55 @@
           </a>
         </div>
         <div style="width: 100px; text-align: center">
-          <a href="https://www.facebook.com/OtisGamerVN" target="_blank">
+          <a href="https://www.youtube.com/@otvchannelvn" target="_blank">
             <img
-              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
+              src="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
               width="80"
               style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
             />
             <p>
               <img
-                src="https://img.icons8.com/color/20/facebook-new.png"
+                src="https://img.icons8.com/color/20/youtube-play.png"
                 style="vertical-align: middle; margin-right: 5px"
-              />OTISStore
+              />OTV Channel
             </p>
           </a>
         </div>
+
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.youtube.com/@otvstoryvn" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/09/44/f6/0944f6cacd07b3a164a82d62f02d2709.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTV Story
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ngăn 4: OTISSHOP -->
+    <section id="information">
+      <img
+        src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/498592964_122139151082611769_2849224014646368616_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=pa05HYab5DMQ7kNvwHJoRzm&_nc_oc=Admix1GwyeLvcG5eTD12UWbjjSFqcEr-BdQkWmNgyu7zg89YHfYA-ltEoRxE9QYxizI&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=tdwfJIa9xixBq3_d0DEHhQ&oh=00_AfIDGb4u_BBNZUrUe2UGejBMlgujBSltj2FPyoJFd58jyw&oe=682F63DB"
+        alt="Poster-OTISShop"
+        style="width: 100%; height: auto"
+      />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          flex-wrap: wrap;
+          padding: 20px 15px;
+        "
+      >
         <div style="width: 100px; text-align: center">
           <a href="https://www.facebook.com/OtisSeller" target="_blank">
             <img
@@ -216,85 +252,6 @@
             </p>
           </a>
         </div>
-      </div>
-      <!-- Nhúng reel hoặc bài viết Facebook -->
-      <div id="fb-root"></div>
-      <script
-        async
-        defer
-        crossorigin="anonymous"
-        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
-      ></script>
-
-      <!-- Container chứa các post -->
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 15px;
-          justify-content: center;
-          max-width: 1200px;
-          margin: auto;
-        "
-      >
-        <!-- Bài 1 -->
-        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
-          <iframe
-            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F672996332031027%2F&show_text=false&width=267&t=0"
-            width="360"
-            height="640"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowfullscreen="true"
-          ></iframe>
-        </div>
-
-        <!-- Bài 2 -->
-        <!-- <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
-          <iframe
-            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FOtisGamerVN%2Fvideos%2F2050806685329017%2F&show_text=false&width=560&t=0"
-            width="360"
-            height="210"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowfullscreen="true"
-          ></iframe>
-        </div> -->
-
-        <!-- Bài 3 -->
-        <div style="width: 360px; border-radius: 8px; box-sizing: border-box">
-          <iframe
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOtisSeller%2Fposts%2F122138746688611769&show_text=true&width=500"
-            width="360"
-            height="480"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ngăn 4: More Channels -->
-    <section id="more-channels">
-      <h2>More Channels</h2>
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          gap: 15px;
-          flex-wrap: wrap;
-          padding-top: 30px;
-        "
-      >
         <div style="width: 100px; text-align: center">
           <a href="https://www.instagram.com/otisshopvn" target="_blank">
             <img
@@ -341,7 +298,88 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- Ngăn 5: OTISSTORE -->
+    <section id="information">
+      <img
+        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/492354735_122136206864661217_7949125846570999972_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=9JtBJrezoyYQ7kNvwFljtMQ&_nc_oc=AdkcRLilLHQRAX8juhvu07v4KWIlX5bQtW9i7ie7qNOpr-OVkCB7e21qmYW-CSIkRfg&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=oAEJ_wclS6cAVnTV-MLm4Q&oh=00_AfKZkGvsX0In-6JU5WeUCGuH41QJF8cduokoWcdtIlBHYg&oe=682F740D"
+        alt="Poster-OTISStore"
+        style="width: 100%; height: auto"
+      />
       <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          flex-wrap: wrap;
+          padding: 20px 15px;
+        "
+      >
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.facebook.com/OtisGamerVN" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/facebook-new.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTISStore
+            </p>
+          </a>
+        </div>
+
+        <div style="width: 100px; text-align: center">
+          <a href="https://www.youtube.com/@otisstorevn" target="_blank">
+            <img
+              src="https://i.pinimg.com/736x/34/59/6a/34596a4db3932a3855c872c2f4833e5d.jpg"
+              width="80"
+              style="border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"
+            />
+            <p>
+              <img
+                src="https://img.icons8.com/color/20/youtube-play.png"
+                style="vertical-align: middle; margin-right: 5px"
+              />OTISSTORE
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Youtube -->
+      <!-- <div
+        id="videos-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          justify-content: center;
+        "
+      >
+        <div id="videosOTVChannel" style="width: 360px"></div>
+        <div id="videosOTVStory" style="width: 360px"></div>
+        <div id="videosOTVGaming" style="width: 360px"></div>
+      </div> -->
+    </section>
+
+    <!-- Ngăn 4: Facebook -->
+    <!-- <section id="facebook-reels">
+      <h2>Facebook Videos</h2> -->
+
+    <!-- Nhúng reel hoặc bài viết Facebook -->
+    <!-- <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
+      ></script> -->
+
+    <!-- Container chứa các post -->
+    <!-- <div
         style="
           display: flex;
           flex-wrap: wrap;
@@ -350,139 +388,182 @@
           max-width: 1200px;
           margin: auto;
         "
-      >
-        <!-- Instagram Post -->
-        <div style="width: 360px; flex-shrink: 0">
-          <blockquote
-            class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DGCafd-IIfu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-            data-instgrm-version="14"
-            style="width: 360px"
-          ></blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-        </div>
-
-        <!-- TikTok Post -->
-        <div style="width: 360px; flex-shrink: 0">
-          <blockquote
-            class="tiktok-embed"
-            cite="https://www.tiktok.com/@otisshop/video/7503553465981930760"
-            data-video-id="7503553465981930760"
-            style="width: 360px"
-          >
-            <section></section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
-        </div>
-
-        <!-- Threads Post -->
-        <!-- <div style="width: 360px; flex-shrink: 0">
+      > -->
+    <!-- Bài 1 -->
+    <!-- <div
+          style="
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 9 / 16;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+          "
+        >
           <iframe
-            src="https://www.threads.net/@otisshopvn/post/DBfkPY1PZlu"
-            width="360"
-            frameborder="0"
+            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F672996332031027%2F&show_text=false&width=267&t=0"
+            style="width: 100%; height: 100%; border: none; overflow: hidden"
             scrolling="no"
-            allowfullscreen
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div> -->
-      </div>
-    </section>
 
-    <!-- Ngăn 5: Footer -->
-    <footer
-      style="
-        background: #121212;
-        color: #e4e4e4;
-        font-family: sans-serif;
-        padding: 15px 0;
-      "
-    >
+    <!-- Bài 2 -->
+    <!-- <div
+          style="
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 9 / 16;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+          "
+        >
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FOtisGamerVN%2Fvideos%2F2050806685329017%2F&show_text=false&width=560&t=0"
+            style="width: 100%; height: 100%; border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div> -->
+
+    <!-- Bài 3 -->
+    <!-- <div
+          style="
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 5/7;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+          "
+        >
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOtisSeller%2Fposts%2F122138746688611769&show_text=true&width=500"
+            style="width: 100%; height: 100%; border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <section id="footer">
       <div
         style="
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
           max-width: 1200px;
           margin: auto;
+          padding: 0 15px;
           text-align: center;
         "
       >
-        <!-- Contact -->
-        <div style="flex: 1; min-width: 200px">
-          <h3>Contact</h3>
-          <ul style="list-style: none; padding: 0; line-height: 1.5">
-            <li>
-              Zalo:
-              <a
-                href="https://zalo.me/0329022431"
-                target="_blank"
-                style="color: #007aff; text-decoration: none"
-              >
-                0329 022 431
-              </a>
-            </li>
-            <li>
-              Hotline:
-              <a
-                href="tel:0329022431"
-                style="color: #007aff; text-decoration: none"
-              >
-                0329 022 431
-              </a>
-            </li>
-            <li>
-              Email:
-              <a
-                href="mailto:thinhkvtm2006@gmail.com"
-                style="color: #007aff; text-decoration: none"
-              >
-                thinhkvtm2006@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h3>Donate</h3>
 
-        <!-- Donate -->
-        <div style="flex: 1; min-width: 200px">
-          <h3>Donate</h3>
-          <ul style="list-style: none; padding: 0; line-height: 1.5">
-            <li>
-              <a
-                href="https://nhantien.momo.vn/0843840438"
-                target="_blank"
-                style="
-                  display: inline-block;
-                  background: #c8102e;
-                  color: #fff;
-                  padding: 1px;
-                  margin: 2.5px 0;
-                  border-radius: 2px;
-                  text-decoration: none;
-                "
-                >Momo: 0843 840 438</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://vietqr.net/9704056607205230700"
-                target="_blank"
-                style="
-                  display: inline-block;
-                  background: #c8102e;
-                  color: #fff;
-                  padding: 1px;
-                  margin: 2.5px 0;
-                  border-radius: 2px;
-                  text-decoration: none;
-                "
-              >
-                Agribank: 6607205230700
-              </a>
-            </li>
-          </ul>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+          "
+        >
+          <div style="flex: 1 1 30%; max-width: 110px">
+            <img
+              src="https://i.pinimg.com/736x/40/05/9b/40059b9b00037529a0cad56eb5ae4d1d.jpg"
+              alt="Donate Agribank"
+              style="width: 100%; border-radius: 8px"
+            />
+          </div>
+
+          <div style="flex: 1 1 30%; max-width: 110px">
+            <img
+              src="https://i.pinimg.com/736x/27/17/68/271768775d063a13b76b78bfb4b4befe.jpg"
+              alt="Donate MoMo"
+              style="width: 100%; border-radius: 8px"
+            />
+          </div>
+
+          <div style="flex: 1 1 30%; max-width: 110px">
+            <img
+              src="https://i.pinimg.com/736x/15/81/ed/1581edcd2b862a72f316ce2b84cc0e15.jpg"
+              alt="Donate Zalopay"
+              style="width: 100%; border-radius: 8px"
+            />
+          </div>
         </div>
       </div>
-    </footer>
+
+      <!-- Keyword SEO -->
+      <div
+        style="
+          max-width: 1200px;
+          margin: 20px auto 10px;
+          padding: 0 15px;
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #bbb;
+        "
+      >
+        <strong>Mọi người cũng tìm kiếm:</strong><br />
+        OTVGroup | Otis Võ | OTISShop | OTISStore | Chill | Music | Tâm Sự | Tâm
+        Trạng | Tình Yêu | Cặp Đôi | Xu Hướng | Viral | Buồn | Hạnh Phúc | Cô
+        Đơn | Lofi | Remix | Vinahouse | Deephouse | Thịnh Hành | Mạng Xã Hội |
+        Thành Công | Thành Đạt | Tâm Hồn | Ký Ức | Lắng Đọng | Cảm Xúc | Nỗi Nhớ
+        | Yêu Thương | Tổn Thương | Vỡ Tan | Bình Yên | Giải Tỏa | Cô Độc | Vấp
+        Ngã | Tự Sự | Acoustic | Ballad | EDM | Hiphop | Rap Việt | Mashup |
+        V-pop | Cover | Live Session | Trending Song | Nhạc Buồn | Nhạc Tiktok |
+        Soundtrack | Melody | Vocal | Động Lực | Đam Mê | Khởi Nghiệp | Kinh
+        Doanh | Truyền Cảm Hứng | Yêu Bản Thân | Công Nghệ | Reaction | Bắt
+        Trend | Thịnh Hành Tiktok | Drama Showbiz | Viral Video
+      </div>
+
+      <!-- Info Legal -->
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 10px 15px;
+          text-align: center;
+          font-size: 13px;
+          color: #888;
+        "
+      >
+        © 2024 - 2025 Công Ty TNHH MTV OTVGroup
+        <br />
+        • Địa chỉ:
+        <a
+          href="https://maps.app.goo.gl/au8jubbPqSTZ8FjP7"
+          style="color: #007aff; text-decoration: none"
+        >
+          P.Tân Chánh Hiệp, Q.12, TP. Hồ Chí Minh
+        </a>
+        <br />
+        • Hotline:
+        <a href="tel=0329022431" style="color: #007aff; text-decoration: none">
+          0329 022 431
+        </a>
+        • Email:
+        <a
+          href="mailto:thinhkvtm2006@gmail.com"
+          style="color: #007aff; text-decoration: none"
+        >
+          thinhkvtm2006@gmail.com
+        </a>
+        <br />
+        • Chịu trách nhiệm kỹ thuật: Võ Trường Thịnh
+      </div>
+    </section>
 
     <script>
       const channels = [
