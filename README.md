@@ -118,7 +118,7 @@
       >
         <!-- OTVChannel -->
         <div
-          id="videosOTVChannel"
+          id="videosOTVChannel1"
           style="
             width: 100%;
             min-width: 360px;
@@ -130,7 +130,19 @@
         ></div>
         <!-- OTVStory -->
         <div
-          id="videosOTVStory"
+          id="videosOTVStory1"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+        <!-- OTVGaming -->
+        <div
+          id="videosOTVGaming1"
           style="
             width: 100%;
             min-width: 360px;
@@ -141,9 +153,70 @@
           "
         ></div>
 
+        <!-- OTVChannel -->
+        <div
+          id="videosOTVChannel2"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+        <!-- OTVStory -->
+        <div
+          id="videosOTVStory2"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
         <!-- OTVGaming -->
         <div
-          id="videosOTVGaming"
+          id="videosOTVGaming2"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+
+        <!-- OTVChannel -->
+        <div
+          id="videosOTVChannel3"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+        <!-- OTVStory -->
+        <div
+          id="videosOTVStory3"
+          style="
+            width: 100%;
+            min-width: 360px;
+            background: #1a1a1a;
+            overflow: hidden;
+            scroll-snap-align: start;
+            color: #fff;
+          "
+        ></div>
+        <!-- OTVGaming -->
+        <div
+          id="videosOTVGaming3"
           style="
             width: 100%;
             min-width: 360px;
@@ -567,9 +640,9 @@
 
     <script>
       const channels = [
-        { id: "UCv-PFwjDGSfgozwLVCJEv0w", target: "videosOTVChannel" }, // otvchannelvn
-        { id: "UC4UOBFi4HJHU_EhynZbrefw", target: "videosOTVStory" }, // otvstoryvn
-        { id: "UCM8xwnvLQ60wfEgduDRzRMg", target: "videosOTVGaming" }, // otvgamingvn
+        { id: "UCv-PFwjDGSfgozwLVCJEv0w", targetPrefix: "videosOTVChannel" }, // otvchannelvn
+        { id: "UC4UOBFi4HJHU_EhynZbrefw", targetPrefix: "videosOTVStory" }, // otvstoryvn
+        { id: "UCM8xwnvLQ60wfEgduDRzRMg", targetPrefix: "videosOTVGaming" }, // otvgamingvn
       ];
 
       channels.forEach((channel) => {
@@ -578,19 +651,37 @@
         )
           .then((response) => response.json())
           .then((data) => {
-            let latestVideo = data.items[0];
-            document.getElementById(channel.target).innerHTML = `
-                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/${
-                      latestVideo.guid.split(":")[2]
-                    }" frameborder="0" allowfullscreen loading="lazy"></iframe>
-                    <h3>${latestVideo.title}</h3>
-                `;
+            const videos = data.items.slice(0, 3); // lấy 3 video đầu
+
+            videos.forEach((item, index) => {
+              const videoId = item.guid.split(":")[2];
+              const targetId = `${channel.targetPrefix}${index + 1}`;
+
+              const videoHTML = `
+          <iframe width="100%" height="215" src="https://www.youtube.com/embed/${videoId}" 
+            frameborder="0" allowfullscreen loading="lazy"></iframe>
+          <h3 style="font-size: 1rem; margin-top: 8px;">${item.title}</h3>
+        `;
+
+              const targetElement = document.getElementById(targetId);
+              if (targetElement) {
+                targetElement.innerHTML = videoHTML;
+              } else {
+                console.warn(`Không tìm thấy phần tử với ID: ${targetId}`);
+              }
+            });
           })
           .catch((error) => {
             console.error("Lỗi tải video:", error);
-            document.getElementById(
-              channel.target
-            ).innerHTML = `<p>Không thể tải video.</p>`;
+            // Hiển thị lỗi cho cả 3 vị trí nếu có
+            for (let i = 1; i <= 3; i++) {
+              const errorTarget = document.getElementById(
+                `${channel.targetPrefix}${i}`
+              );
+              if (errorTarget) {
+                errorTarget.innerHTML = `<p>Không thể tải video.</p>`;
+              }
+            }
           });
       });
     </script>
