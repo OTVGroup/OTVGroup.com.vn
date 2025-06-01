@@ -232,7 +232,7 @@
     <!-- Ngăn 3: OTVGroup -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/498688443_122161872326552182_1695768090882699136_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0G9mzZT3EaoQ7kNvwEnm-8A&_nc_oc=AdkqPWjqNCpr37r6IeT69RWPvMdHjb3GUktSfTiK3k5RneYwB4RIDNJdhldQKvo8QtE&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=mBODppp4OW_CB2Tnu4-qgA&oh=00_AfKS1FQmoPIwYS3PAJC7e8_80Eh8RQczoayWGVD3mXhseQ&oe=682F55AF"
+        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/498574436_122161878548552182_6001638578425431044_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=soU4Bfgh6XMQ7kNvwEqBaup&_nc_oc=AdmLThVt4NfBxddTDKa7vfR0qPZFZGxYwZKE2V3NfodpoaKFSJhDuc7ETASEVcbqLTo&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=D6cpWgBQjBKU1X_5EZrTcw&oh=00_AfJUmElpOMT3-lAkzFDYZKe8xGEOOyP52EonKB8YQjyOQQ&oe=6842248C"
         alt="Poster-OTVGroup"
         style="width: 100%; height: auto"
       />
@@ -297,7 +297,7 @@
     <!-- Ngăn 4: OTISSHOP -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/498592964_122139151082611769_2849224014646368616_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=pa05HYab5DMQ7kNvwHJoRzm&_nc_oc=Admix1GwyeLvcG5eTD12UWbjjSFqcEr-BdQkWmNgyu7zg89YHfYA-ltEoRxE9QYxizI&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=tdwfJIa9xixBq3_d0DEHhQ&oh=00_AfIDGb4u_BBNZUrUe2UGejBMlgujBSltj2FPyoJFd58jyw&oe=682F63DB"
+        src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/498615640_122139155642611769_7224681589008185550_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yQbrFj3S6TYQ7kNvwGhTM5u&_nc_oc=AdnQjFoLPXUUM2pt-j2JKp8XPNMUZNjJ80VJLkDVZSJ4Mxcrj9iAEv1ypXnk9Pn2wPI&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=9hRs2eswLHML4n3MUZMX0Q&oh=00_AfJKgkM9Gf9JWSLE9ujh8Q-t61xKxOy9vtwIpvCR5SbIRA&oe=68421BF4"
         alt="Poster-OTISShop"
         style="width: 100%; height: auto"
       />
@@ -376,7 +376,7 @@
     <!-- Ngăn 5: OTISSTORE -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/492354735_122136206864661217_7949125846570999972_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=9JtBJrezoyYQ7kNvwFljtMQ&_nc_oc=AdkcRLilLHQRAX8juhvu07v4KWIlX5bQtW9i7ie7qNOpr-OVkCB7e21qmYW-CSIkRfg&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=oAEJ_wclS6cAVnTV-MLm4Q&oh=00_AfKZkGvsX0In-6JU5WeUCGuH41QJF8cduokoWcdtIlBHYg&oe=682F740D"
+        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/492354735_122136206864661217_7949125846570999972_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=PVxrtHugfLcQ7kNvwGgPTEY&_nc_oc=AdlzK4YhbhyBUaGaU72cD2BpN7d-XL5P24-4zbfwHCk2HKGRabfKaZGex-VPWXrfh7A&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=7WzUETkYhuzj4mlei_M9cg&oh=00_AfLyVDS2q7OFSt5hIurQirQaXLf36Dx0rb7xOgPNcMqIow&oe=6842214D"
         alt="Poster-OTISStore"
         style="width: 100%; height: auto"
       />
