@@ -232,7 +232,7 @@
     <!-- Ngăn 3: OTVGroup -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/498574436_122161878548552182_6001638578425431044_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=soU4Bfgh6XMQ7kNvwEqBaup&_nc_oc=AdmLThVt4NfBxddTDKa7vfR0qPZFZGxYwZKE2V3NfodpoaKFSJhDuc7ETASEVcbqLTo&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=D6cpWgBQjBKU1X_5EZrTcw&oh=00_AfJUmElpOMT3-lAkzFDYZKe8xGEOOyP52EonKB8YQjyOQQ&oe=6842248C"
+        src="https://raw.githubusercontent.com/OTVGroup/OTVGroup.com.vn/main/Background%20-%20OTVGroup.jpeg"
         alt="Poster-OTVGroup"
         style="width: 100%; height: auto"
       />
@@ -297,7 +297,7 @@
     <!-- Ngăn 4: OTISSHOP -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/498615640_122139155642611769_7224681589008185550_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yQbrFj3S6TYQ7kNvwGhTM5u&_nc_oc=AdnQjFoLPXUUM2pt-j2JKp8XPNMUZNjJ80VJLkDVZSJ4Mxcrj9iAEv1ypXnk9Pn2wPI&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=9hRs2eswLHML4n3MUZMX0Q&oh=00_AfJKgkM9Gf9JWSLE9ujh8Q-t61xKxOy9vtwIpvCR5SbIRA&oe=68421BF4"
+        src="https://raw.githubusercontent.com/OTVGroup/OTVGroup.com.vn/main/Background%20-%20OTISShop.jpeg"
         alt="Poster-OTISShop"
         style="width: 100%; height: auto"
       />
@@ -376,7 +376,7 @@
     <!-- Ngăn 5: OTISSTORE -->
     <section id="information">
       <img
-        src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/492354735_122136206864661217_7949125846570999972_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=PVxrtHugfLcQ7kNvwGgPTEY&_nc_oc=AdlzK4YhbhyBUaGaU72cD2BpN7d-XL5P24-4zbfwHCk2HKGRabfKaZGex-VPWXrfh7A&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=7WzUETkYhuzj4mlei_M9cg&oh=00_AfLyVDS2q7OFSt5hIurQirQaXLf36Dx0rb7xOgPNcMqIow&oe=6842214D"
+        src="https://raw.githubusercontent.com/OTVGroup/OTVGroup.com.vn/main/Background-OTISStore.jpeg"
         alt="Poster-OTISStore"
         style="width: 100%; height: auto"
       />
