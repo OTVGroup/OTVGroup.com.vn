@@ -5,13 +5,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta name="description" content="Hân Hạnh Đồng Hành Cùng Bạn!." />
+    <meta name="description" content="Hân Hạnh Đồng Hành Cùng Bạn!" />
     <meta name="author" content="OTVGroup" />
     <meta
       name="image"
       content="https://i.pinimg.com/736x/15/c2/33/15c233ab5cce7b9e60094a36653a3dc5.jpg"
     />
-    <title>OTVGroup</title>
+    <title>OTVGroup | Hân Hạnh Đồng Hành Cùng Bạn!</title>
     <link
       rel="icon"
       type="image/jpeg"
