@@ -132,14 +132,13 @@
       .marquee-inner {
         display: inline-block;
         white-space: nowrap;
-        height: 15px;
         padding: 15px 0;
         animation: scrollLeft linear infinite;
       }
 
       .marquee .link {
         display: inline-block;
-        margin-right: 100px; /* khoảng cách giữa các link */
+        margin-right: 50px; /* khoảng cách giữa các link */
       }
 
       .marquee .link a {
@@ -155,10 +154,10 @@
 
       @keyframes scrollLeft {
         0% {
-          transform: translateX(100%);
+          transform: translateX(50%);
         }
         100% {
-          transform: translateX(-100%);
+          transform: translateX(-50%);
         }
       }
 
@@ -265,7 +264,7 @@
         overflow: hidden; /* ẩn tràn viền */
         margin: 0;
         font-size: 15px;
-        width: 200px;
+        width: 320px;
       }
 
       .search-box input {
@@ -300,25 +299,20 @@
           display: grid;
           grid-template-columns: 1fr 1fr; /* 2 cột */
           grid-template-rows: 1fr 1fr; /* 2 hàng */
-          width: 28px;
-          height: 28px;
-          padding: 4px;
-          border-radius: 50%;
-          background-color: #000;
-          border: 2px solid white;
+          width: 36px;
+          height: 36px;
+          padding: 2px;
           justify-items: center;
           justify-content: center;
-          transform: rotate(45deg);
         }
 
         .social-icon a {
-          font-size: 12px;
-          width: 13px;
-          height: 13px;
+          font-size: 14px;
+          width: 18px;
+          height: 18px;
           justify-items: center;
           justify-content: center;
           color: #fff;
-          transform: rotate(-45deg);
           text-decoration: none;
         }
         .social-icon a:hover {
@@ -328,10 +322,6 @@
         nav {
           display: flex;
           flex-direction: column; /* xếp dọc */
-        }
-
-        nav .search-box {
-          width: 360px;
         }
 
         .search-box input {
