@@ -10,6 +10,40 @@
     />
 
     <style>
+      :root {
+        --bg-color-header: #00509e;
+        --text-color-header: white;
+
+        --bg-color-menu: #8bb7d6;
+        --text-color-menu: black;
+
+        --bg-color-intro-1: #fffbea;
+        --bg-color-intro-2: #fff1b8;
+        --bg-color-intro-3: #ffe066;
+        --bg-color-intro-4: #fcd34d;
+        --bg-color-intro-5: #fbbf24;
+        --text-color-intro: #fff;
+
+        --bg-color-0: #b3e0e5;
+        --text-color-0: white;
+
+        --bg-color-brand: #b3e0e5;
+        --text-color-brand: white;
+
+        --bg-color-contact: #00509e;
+        --text-color-contact: white;
+
+        --bg-color-box: #f9f9f9;
+
+        --height-bottom: calc(100vh - 112px);
+
+        --bg-color-bottom: #00509e;
+      }
+
+      html {
+        scroll-behavior: smooth; /* cuộn mượt khi click link */
+      }
+
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -17,8 +51,13 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
-        width: 100vw;
         justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ipMgGslRix-e7ceU7UjTSVUog0InBlZNJA&s"); /* đường dẫn hình */
+        background-repeat: no-repeat; /* không lặp lại */
+        background-position: bottom center; /* căn dưới + căn giữa ngang */
+        background-size: 100%;
       }
 
       .body-top {
@@ -34,17 +73,16 @@
         position: fixed;
         top: 92px; /* đúng bằng chiều cao header */
         left: 0;
-        padding-bottom: 5px;
+        padding-bottom: 0;
         width: 100vw;
         height: calc(100vh - 92px); /* chiếm phần còn lại */
         overflow-y: auto; /* cuộn dọc */
-        background: #ffffff;
       }
 
       /* Thanh hotline + email */
       .contact-bar {
-        background: #17c0c9;
-        color: #fff;
+        background: var(--bg-color-header);
+        color: var(--text-color-header);
         display: flex;
         height: 45px;
         justify-content: space-between;
@@ -57,7 +95,6 @@
         height: 100%;
         background: #adf4f82e;
         padding: 0 10px;
-        margin-right: 10px;
       }
 
       .logo-img {
@@ -81,54 +118,84 @@
         font-style: italic;
         line-height: 1;
         padding: 0;
-        color: #333;
+        color: #000000;
       }
 
-      .contact-marquee {
-        flex: 1; /* chiếm hết không gian giữa */
-        padding: 0;
-        text-align: center;
-        border: none; /* không viền */
+      .marquee {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
       }
 
-      .contact-marquee marquee {
+      .marquee-inner {
+        display: inline-block;
+        white-space: nowrap;
+        height: 15px;
+        padding: 15px 0;
+        animation: scrollLeft linear infinite;
+      }
+
+      .marquee .link {
+        display: inline-block;
+        margin-right: 100px; /* khoảng cách giữa các link */
+      }
+
+      .marquee .link a {
+        text-decoration: none;
+        color: white;
         font-size: 15px;
-        color: #fff;
-        line-height: 1;
+        line-height: 15px;
       }
 
-      .social-icon {
+      .marquee .link a .see-more {
+        color: rgb(0, 0, 0);
+      }
+
+      @keyframes scrollLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .social {
         display: flex;
         padding: 0 10px;
-        margin-left: 10px;
         height: 100%;
         background: #adf4f82e;
         justify-content: center; /* căn giữa ngang */
         align-items: center;
       }
 
-      .icon a {
-        font-size: 24px;
+      .social-icon {
+        width: 145px;
+        display: flex;
+        justify-content: center; /* căn giữa ngang */
+        align-items: center;
+      }
+
+      .social-icon a {
+        font-size: 20px;
         color: #fff;
         display: flex; /* dùng flex để căn giữa icon */
         align-items: center;
         justify-content: center;
-        width: 38px; /* ô icon đều nhau */
+        width: 36.25px; /* ô icon đều nhau */
         text-decoration: none;
-        transition: color 0.3s;
+        transition: color 0.5s;
       }
 
-      .icon a:last-child {
-        border-right: none;
-      }
-
-      .icon a:hover {
+      .social-icon a:hover {
         color: #333;
       }
 
       /* Navbar chính */
       nav {
-        background: #012b86;
+        background: var(--bg-color-menu);
         display: flex;
         width: 100%;
         align-items: center;
@@ -147,13 +214,13 @@
       }
 
       .nav-2 {
-        color: #fff;
+        color: var(--text-color-menu);
         margin: 0 auto;
         position: relative;
       }
 
       .nav-2 a {
-        color: #fff;
+        color: var(--text-color-menu);
         font-size: 24px;
         text-decoration: none;
       }
@@ -220,7 +287,44 @@
       }
 
       /* Responsive */
-      @media (max-width: 720px) {
+      @media (max-width: 500px) {
+        .logo-text {
+          display: none;
+        }
+
+        .social {
+          padding: 0 10px;
+        }
+
+        .social-icon {
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* 2 cột */
+          grid-template-rows: 1fr 1fr; /* 2 hàng */
+          width: 28px;
+          height: 28px;
+          padding: 4px;
+          border-radius: 50%;
+          background-color: #000;
+          border: 2px solid white;
+          justify-items: center;
+          justify-content: center;
+          transform: rotate(45deg);
+        }
+
+        .social-icon a {
+          font-size: 12px;
+          width: 13px;
+          height: 13px;
+          justify-items: center;
+          justify-content: center;
+          color: #fff;
+          transform: rotate(-45deg);
+          text-decoration: none;
+        }
+        .social-icon a:hover {
+          color: #a4a4a4;
+        }
+
         nav {
           display: flex;
           flex-direction: column; /* xếp dọc */
@@ -237,6 +341,10 @@
         .body-bottom {
           top: 121px; /* đúng bằng chiều cao header */
           height: calc(100vh - 121px); /* chiếm phần còn lại */
+        }
+
+        :root {
+          --height-bottom: calc(100vh - 141px);
         }
       }
 
@@ -333,17 +441,17 @@
         flex: 1 1 160px;
         padding: 5px;
         border-radius: 10px;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        background-color: var(--bg-color-box);
         transition: transform 0.5s ease;
       }
 
       .box-introduce:hover {
         transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
 
       .box-introduce i {
-        width: calc(9px + 0.5vh + 0.5vw);
+        width: calc(10px + 0.5vh + 0.5vw);
         text-align: center;
       }
 
@@ -353,7 +461,7 @@
         gap: 5px;
         font-size: calc(5px + 0.6vh + 0.6vw);
         color: #333;
-        background: #f9f9f9;
+        background-color: var(--bg-color-box);
         padding: 5px;
         border-radius: 5px;
         transition: background 0.5s ease;
@@ -422,7 +530,7 @@
       }
 
       .wrapper {
-        position: relative; /* dùng để skill-content định vị tương đối */
+        position: relative;
       }
 
       /* Nội dung ẩn */
@@ -432,7 +540,7 @@
         top: 100%; /* nằm ngay dưới skill */
         left: 0;
         gap: 2px;
-        background: #eeeeee;
+        background: #f9f9f9;
         padding: 5px;
         width: 100%; /* điều chỉnh theo ý bạn */
         max-height: 120px;
@@ -473,33 +581,25 @@
           </div>
         </div>
         <!-- Phần thông báo chạy giữa -->
-        <div class="contact-marquee">
-          <marquee behavior="scroll" direction="left" scrollamount="5">
-            <nav style="background: none">
-              OTVGroup là một hệ sinh thái nội dung sôi động, sáng tạo và đa
-              dạng, nổi bật trong các lĩnh vực giải trí, nghệ thuật và đổi mới
-              kỹ thuật số.
-            </nav>
-          </marquee>
+        <div class="marquee">
+          <div class="marquee-inner" id="marquee"></div>
         </div>
+
         <!-- Icon mạng xã hội -->
-        <div class="social-icon">
-          <div class="icon">
+        <div class="social">
+          <div class="social-icon">
             <a href="https://www.facebook.com/OtisVo586" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
-          </div>
-          <div class="icon">
+
             <a href="https://www.youtube.com/@otvchannelvn" target="_blank">
               <i class="fab fa-youtube"></i>
             </a>
-          </div>
-          <div class="icon">
+
             <a href="https://www.tiktok.com/@otvgroup" target="_blank">
               <i class="fab fa-tiktok"></i>
             </a>
-          </div>
-          <div class="icon">
+
             <a href="https://www.instagram.com/otvgroup/" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
@@ -568,7 +668,10 @@
 
       <!-- Nội dung -->
       <section
-        style="--background: rgb(246, 225, 143); --shadow: rgba(0, 0, 0, 0.4)"
+        style="
+          --background: var(--bg-color-intro-1);
+          --shadow: rgba(0, 0, 0, 0.4);
+        "
         id="introduce"
       >
         <div class="main1">GIỚI THIỆU</div>
@@ -577,7 +680,7 @@
             <div class="main2">
               <i class="fa-solid fa-lightbulb"></i> <a>Đổi mới</a>
             </div>
-            <div class="main3">
+            <div class="main3 marquee" id="marquee-change">
               Luôn tiên phong sáng tạo và ứng dụng giải pháp đột phá để mang lại
               lợi thế cạnh tranh.
             </div>
@@ -587,9 +690,9 @@
             <div class="main2">
               <i class="fa-solid fa-gem"></i> <a>Chất lượng</a>
             </div>
-            <div class="main3">
-              Cam kết sản phẩm và dịch vụ đạt chuẩn cao nhất với quy trình minh
-              bạch, chuyên nghiệp.
+            <div class="main3 marquee" id="marquee-quality">
+              Cam kết sản phẩm và dịch vụ đạt chuẩn cao với quy trình minh bạch,
+              chuyên nghiệp.
             </div>
           </div>
 
@@ -597,15 +700,19 @@
             <div class="main2">
               <i class="fa-solid fa-user-check"></i> <a>Tin cậy</a>
             </div>
-            <div class="main3">
+            <div class="main3 marquee" id="marquee-reputation">
               Xây dựng niềm tin bằng sự tận tâm, trách nhiệm và đảm bảo đúng cam
               kết với khách hàng.
             </div>
           </div>
         </div>
       </section>
+
       <section
-        style="--background: rgb(143, 217, 246); --shadow: rgba(0, 0, 0, 0.4)"
+        style="
+          --background: var(--bg-color-intro-2);
+          --shadow: rgba(0, 0, 0, 0.4);
+        "
         id="skill"
       >
         <div class="main2">Chúng tôi có thể?</div>
@@ -724,7 +831,87 @@
           </div>
         </div>
       </section>
+
+      <section
+        style="
+          --background: var(--bg-color-intro-3);
+          --shadow: rgba(0, 0, 0, 0.4);
+        "
+        id="skill"
+      >
+        <div class="main2">Mani2</div>
+        <div class="note">"Note"</div>
+      </section>
+
+      <section
+        style="
+          --background: var(--bg-color-intro-4);
+          --shadow: rgba(0, 0, 0, 0.4);
+        "
+        id="skill"
+      >
+        <div class="main2">Mani2</div>
+        <div class="note">"Note"</div>
+      </section>
+
+      <section
+        style="
+          --background: var(--bg-color-intro-5);
+          --shadow: rgba(0, 0, 0, 0.4);
+        "
+        id="skill"
+      >
+        <div class="main2">Mani2</div>
+        <div class="note">"Note"</div>
+      </section>
+
+      <section
+        style="
+          --background: rgba(0, 0, 255, 0.515);
+          --shadow: rgba(0, 0, 0, 0.4);
+          height: var(--height-bottom);
+        "
+        id="skill"
+      >
+        <div class="main2">Bottom</div>
+        <div class="note">"Note"</div>
+      </section>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const contents = document.querySelectorAll("div[id^='marquee-']");
+        const marqueeInner = document.getElementById("marquee");
+
+        const timePerItem = 20; // giây / item
+        const total = contents.length;
+
+        contents.forEach((el) => {
+          const div = document.createElement("div");
+          div.classList.add("link");
+
+          const id = el.id;
+          let text = el.textContent.trim() || id.replace("marquee-", "");
+
+          // 🔹 Giới hạn 25 từ
+          let words = text.split(/\s+/);
+          let mainText = words.slice(0, 20).join(" ");
+
+          // 🔹 Xóa dấu câu cuối
+          mainText = mainText.replace(/[.,!?;]+$/, "");
+
+          // 🔹 Thêm " ... Xem thêm."
+          const extra = `<span class="see-more">...Xem thêm.</span>`;
+
+          div.innerHTML = `<a href="#${id}" title="${el.textContent.trim()}">${mainText}${extra}</a>`;
+          marqueeInner.appendChild(div);
+        });
+
+        // set tốc độ cuộn (dựa trên số lượng item)
+        const duration = total * timePerItem;
+        marqueeInner.style.animationDuration = `${duration}s`;
+      });
+    </script>
 
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
